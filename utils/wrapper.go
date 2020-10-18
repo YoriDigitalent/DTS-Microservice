@@ -39,7 +39,7 @@ func WrapAPISuccess(w http.ResponseWriter, r *http.Request, message string, code
 	}
 }
 
-// WrapAPIData wrapper fro data response
+// WrapAPIData wrapper from data response
 func WrapAPIData(w http.ResponseWriter, r *http.Request, data interface{}, code int, message string) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(code)
